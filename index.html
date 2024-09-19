@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebza's sample1 Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        .navbar {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(190, 13, 13, 0.8);
+            padding: 15px;
+            text-align: center;
+            z-index: 100;
+            top: 0;
+        }
+        .navbar a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px 5px;
+        }
+        .section {
+            height: 100vh;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .profile {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            border: solid 2px red;
+            margin: auto;
+        }
+        .content-section {
+            margin-top: 50vh;
+            margin-top: 50vh;
+            text-align: center;
+            padding: 50px;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .content-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: orangered;
+        }
+        .content-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content-section ul li {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        img{
+            width: 500px;
+            height: 250px;
+            
+        }
+        .main-section {
+                    margin-bottom: 30px;
+                    padding: 50px;
+                    
+                    
+                    }
+
+                    .main-section header {
+                    font-size: 1.2em;
+                    margin-bottom: 10px;
+                    }
+
+                    #welcome {
+                    display: block;
+                    margin-top: 60px;
+                    }
+                    header{
+                        margin-top: 30px;
+                    }
+
+                .navbar a:hover {
+                background-color: orangered;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                }
+                footer {
+                        background-color: rgba(190, 13, 13, 0.8);
+                        color: white;
+                        text-align: center;
+                        padding: 10px;
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        margin-top: 50vh;
+                        }
+
+    .welcome-container {
+      display: flex;
+      padding: 20px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      margin-top: 60px;
+     
+
+    }
+
+    .welcome-container .grad {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      border: 4px solid orangered;
+      
+    }
+
+    .welcome-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 30px;
+      
+    }
+
+    .welcome-content h1 {
+      margin: 0;
+      font-size: 24px;
+      color: orangered;
+    }
+
+    .welcome-content p {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .welcome-content .highlight {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+       
+        .welcome-container .grad {
+            
+            margin-right: 0;
+            margin-bottom: 10px;
+            
+            }
+           
+            
+
+    .social-icon img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+        margin: 10px auto;
+        padding: 5px;
+        background-color: orangered;
+    }
+    .social-icon img:hover{
+        transform: scale(1.1);
+    }
+    .underline{
+        text-decoration: underline;
+    }
+
+    .resume-section {
+            margin-bottom: 40px;
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #f0f8ff;
+            border: 1px solid #0056b3;
+            transition: background-color 0.3s, color 0.3s;
+            
+        }
+
+        .resume:hover {
+            background-color: orangered;
+            color: #fff;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a id="skillsLink">Skills</a>
+        <a id="experienceLink">Experience</a>
+        <a id="projectsLink">Projects</a>
+        <a id="educationLink">Education</a>
+        <a id="contactLink">Hire me</a>
+    </div>
+
+    <div class="welcome-container">
+        <div class="welcome-content">
+          <h1 style="font-weight: bolder;">Welcome</h1>
+          <p style="color: black; font-weight: bold;">Hi, It's Me</p>
+          <p>I'm <span class="highlight">Khulekani Cebekhulu</span>, an Electrical Engineer with skills in electrical engineering design and web development.</p>
+          <p>I'm eager to apply my practical skills </p>
+          <p>Explore my projects and learn more about my work!</p>
+        </div>
+
+        <p>
+
+            <a href="https://facebook.com/khulekan Cebekhulu" target="_blank" class="social-icon">
+              <img src="social-icons/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com/khulekan Cebekhulu" target="_blank" class="social-icon">
+              <img src="social-icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://WhatsApp.com/khulekan Cebekhulu" target="_blank" class="social-icon">
+              <img src="social-icons/WhatsApp.png" alt="Whatsapp">
+            </a>
+            <a href="https://khulekanikhethanic@gmail.com" target="_blank" class="social-icon">
+              <img src="social-icons/Gmail.png" alt="gmail">
+            </a>
+      
+        </p>
+        <br>
+
+        <img class="grad" src="Graduate.JPG" alt="Profile Image">
+      </div>
+
+    <div class="content-section" id="skillsSection">
+        <h2>Skills</h2>
+        <ul>
+            <li>C, C++, Python, Assembly</li>
+            <li>Web Development</li>
+            <li>Embedded Systems Design ( Atmega328p, ESP32, Arduino)</li>
+            <li>API Integration</li>
+            <li>Proteus, Arduino IDE, Visual Studio Code, Atmel studio 7, Home grid</li>
+        </ul>
+    </div>
+
+    <div class="content-section" id="experienceSection">
+        <h2>Experience</h2>
+        <ul>
+            <li>Internship at XYZ Electronics - Developed an embedded control system for industrial machinery.</li>
+            <li>Designed a real-time monitoring system using Amega328p for IoT applications.</li>
+            <li>Worked on several personal projects including a weather dashboard and XYZ system.</li>
+        </ul>
+    </div>
+
+    <div class="content-section" id="projectsSection">
+        <h2>Projects</h2>
+        <ul>
+            <li>XYZ Control System</li>
+              <p class="underline">Project overview</p>
+              <br>
+              <br>
+              <p class="underline">Project functionality demo</p>
+            <li>XYZ Monitoring System</li>
+               <p class="underline">Project overview</p>
+               <br>
+               <br>
+               <p class="underline">Project functionality demo</p>
+            <li>XYZ Screening System</li>
+              <p class="underline">Project overview</p>
+              <br>
+              <br>
+              <p class="underline">Project functionality demo</p>
+            <li>XYZ Tracking System</li>
+              <p class="underline">Project overview</p>
+              <br>
+              <br>
+              <p class="underline">Project functionality demo</p>
+        </ul>
+    </div>
+
+    <div class="content-section" id="educationSection">
+        <h2>Education</h2>
+        <ul>
+            <li>XYZ in Engineering - Completed</li>
+            <li>Certifications: XYZ, XYZ, XYZ</li>
+        </ul>
+
+         <!-- Downloadable Resume Section -->
+        <div class="resume-section">
+           <h3 style="color: orangered;">Download my resume</h3>
+           <p>You can download my resume to learn more about my qualifications and experience. Click the button below to access the PDF file:</p>
+           <a class="resume" href="Cebekhulu resume.pdf" target="_blank" download="Cebekhulu resume.pdf">
+               Download Resume (PDF)
+           </a>
+        </div>
+       
+    </div>
+
+    <div id="contactSection" class="content-section">
+        <h2>Contact Me</h2>
+        <p>Email: khulekanikhethanic@gmail.com</p>
+        <p>Phone: 076 299 2174</p>
+    </div>
+    <footer>
+        Developed by Khulekani Cebekhulu
+      </footer>
+
+
+    <script>
+        document.getElementById("skillsLink").addEventListener("click", function() {
+            document.getElementById("skillsSection").scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById("experienceLink").addEventListener("click", function() {
+            document.getElementById("experienceSection").scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById("projectsLink").addEventListener("click", function() {
+            document.getElementById("projectsSection").scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById("educationLink").addEventListener("click", function() {
+            document.getElementById("educationSection").scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById("contactLink").addEventListener("click", function() {
+            document.getElementById("contactSection").scrollIntoView({ behavior: "smooth" });
+            
+        });
+    </script>
+</body>
+</html>
